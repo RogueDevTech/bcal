@@ -1,0 +1,104 @@
+.wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 2rem 0;
+  @media (max-width: 768px) {
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+    border: 1px solid red;
+  }
+
+  .flex_image {
+    display: flex;
+    position: relative;
+    width: 100%;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      position: static;
+    }
+    .property_image {
+      position: absolute;
+      position: relative;
+      top: 55px;
+      object-fit: cover;
+      left: 3em;
+      z-index: 3;
+
+      @media (max-width: 768px) {
+        position: static;
+        width: 100%;
+        height: 400px;
+      }
+    }
+    .discover_flourish_estate {
+      background-image: url("/body-background.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 680px;
+      right: 3em;
+      width: 851px;
+      border-radius: 10px;
+      z-index: 1;
+      @media (max-width: 768px) {
+        right: 0px;
+        width: 100%;
+        height: 400px;
+        position: static;
+      }
+      .overlay {
+        background: rgba(230, 230, 230, 0.846);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        border-radius: 10px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          position: static;
+        }
+        .txt_box {
+          position: absolute;
+          top: 174px;
+          left: 150px;
+          width: 549px;
+          display: flex;
+          flex-direction: column;
+          gap: 2.25em;
+          @media (max-width: 768px) {
+            position: static;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+          }
+          .txt_head {
+            font-family: Cormorant Garamond;
+            font-weight: 600;
+            font-style: SemiBold;
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -1%;
+            font-variant: small-caps;
+            @media (max-width: 768px) {
+              font-size: 24px;
+            }
+          }
+          .paragraph_head {
+            font-family: Inter;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            color: #8c8c8d;
+            @media (max-width: 768px) {
+            }
+          }
+        }
+      }
+    }
+  }
+}

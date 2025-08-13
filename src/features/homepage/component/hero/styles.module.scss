@@ -1,0 +1,63 @@
+.HeroBackground {
+  background-image: url("/hero-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 533px;
+  @media (max-width: 768px) {
+    height: 400px;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.71);
+    width: 100%;
+    height: 100%;
+    @media (max-width: 768px) {
+    }
+    .displacement {
+      position: relative;
+      top: 264px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1.3em;
+      @media (max-width: 768px) {
+        top: 200px;
+      }
+      .header {
+        font-family: Cormorant Garamond;
+        font-weight: 400;
+        // font-style: Regular;
+        font-size: 4.3em;
+        line-height: 60px;
+        letter-spacing: 2%;
+        text-align: center;
+        // font-variant: small-caps;
+        color: #ffffff;
+        @media (max-width: 768px) {
+          font-size: 3em;
+        }
+      }
+      .paragraph {
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        width: 476px;
+        color: #eeeeeecc;
+        @media (max-width: 768px) {
+          width: 250px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
