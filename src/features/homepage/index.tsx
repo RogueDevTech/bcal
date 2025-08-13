@@ -5,16 +5,19 @@ import Discover from "@/component/discover";
 import Header from "./component/header";
 import AboutUs from "./component/about-us";
 import WorkerOnSite from "@/component/our-worker-on-site";
+import AOSProvider from "@/component/aos-provide";
 
 const HomepageFile = () => {
   return (
     <>
       <div className={styles.wrapper}>
-        <Hero />
-        <Discover />
-        <Header />
-        <AboutUs />
-        <WorkerOnSite />
+        <AOSProvider>
+          <Hero />
+          <Discover />
+          <Header />
+          <AboutUs />
+          <WorkerOnSite />
+        </AOSProvider>
       </div>
     </>
   );

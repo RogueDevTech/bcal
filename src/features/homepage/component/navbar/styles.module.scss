@@ -15,6 +15,22 @@
     background: rgba(50, 50, 50, 0.85);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
+  @media (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    padding: 1rem;
+    backdrop-filter: none;
+    background: rgba(13, 21, 34, 0.95);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    &.scrolled {
+      background: rgba(13, 21, 34, 0.98);
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
 
   .navbar_nav {
     display: flex;
@@ -25,7 +41,7 @@
     margin: 0 auto;
 
     .logo {
-      font-family: "Fraunces", serif;
+      font-family: Fraunces;
       font-weight: 600;
       font-size: 20px;
       line-height: 100%;
@@ -58,7 +74,7 @@
 
         li {
           position: relative;
-          font-family: "Inter", sans-serif;
+          font-family: Inter;
           font-size: 1em;
           line-height: 100%;
           letter-spacing: 0.02em;

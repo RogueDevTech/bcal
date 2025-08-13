@@ -7,7 +7,11 @@ const Header = () => {
       <section className={styles.wrapper}>
         <div className={styles.product_listing}>
           <h4 className={styles.top_section_head}>Inside Flourish Estate</h4>
-          <div className={styles.estate_list}>
+          <div
+            className={styles.estate_list}
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <div className={styles.estate_one}>
               <div className={styles.overlay}>
                 <div className={styles.header}>
