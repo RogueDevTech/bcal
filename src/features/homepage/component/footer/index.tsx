@@ -14,7 +14,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <section className={styles.wrapper}>
+      <section id="customers" className={styles.wrapper}>
         <div className={styles.top_footer}>
           <div className={styles.center_txt}>
             <h3>CONTACT US</h3>

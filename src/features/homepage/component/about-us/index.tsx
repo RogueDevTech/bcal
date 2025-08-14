@@ -6,7 +6,7 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <>
-      <section className={styles.wrapper}>
+      <section id="about-us" className={styles.wrapper}>
         <div className={styles.about_us_screen}>
           <Image src={broken} alt="broken" className={styles.brokenImages} />
           <div className={styles.about_us}>

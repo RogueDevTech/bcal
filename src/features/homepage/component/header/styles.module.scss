@@ -5,7 +5,7 @@
   height: 100%;
   padding: 1.5rem 3rem;
   @media (max-width: 768px) {
-    padding: 1.5rem ;
+    padding: 1.5rem;
   }
   .product_listing {
     display: flex;
@@ -101,6 +101,9 @@
                 line-height: 28px;
                 letter-spacing: 0%;
                 color: #a8a8a8;
+                @media (max-width: 768px) {
+                  color: #fff;
+                }
               }
               .btn {
                 width: 110px;
@@ -117,6 +120,9 @@
                 letter-spacing: 0%;
                 color: #90bdff;
                 background-color: rgba(146, 171, 192, 0);
+                @media (max-width: 768px) {
+                  width: 100%;
+                }
               }
             }
           }

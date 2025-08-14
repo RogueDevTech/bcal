@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 const Header = () => {
   return (
     <>
-      <section className={styles.wrapper}>
+      <section id="our-projects" className={styles.wrapper}>
         <div className={styles.product_listing}>
           <h4 className={styles.top_section_head}>Inside Flourish Estate</h4>
           <div
