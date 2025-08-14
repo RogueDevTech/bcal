@@ -7,6 +7,9 @@
   @media (max-width: 768px) {
     padding: 1.5rem;
   }
+  @media (max-width: 1200px) {
+    padding: 1.5rem;
+  }
   .product_listing {
     display: flex;
     flex-direction: column;
@@ -35,13 +38,15 @@
       @media (max-width: 768px) {
         gap: 1em;
       }
+      @media (max-width: 1200px) {
+        gap: 1em;
+      }
 
       .estate_one,
       .estate_two,
       .estate_three {
-        background-image: url("/estate.webp");
         background-position: center;
-        background-repeat: no-repeat;
+        overflow: hidden;
         background-size: cover;
         position: relative;
         width: 100%;
@@ -105,28 +110,18 @@
                   color: #fff;
                 }
               }
-              .btn {
-                width: 110px;
-                height: 44px;
-                opacity: 1;
-                border-radius: 10px;
-                padding: 0.5em 1em;
-                border: 1px solid #90bdff;
-                font-family: Inter;
-                font-weight: 400;
-                font-style: Regular;
-                font-size: 16px;
-                line-height: 28px;
-                letter-spacing: 0%;
-                color: #90bdff;
-                background-color: rgba(146, 171, 192, 0);
-                @media (max-width: 768px) {
-                  width: 100%;
-                }
-              }
             }
           }
         }
+      }
+      .estate_one {
+        background-image: url("/building.webp");
+      }
+      .estate_two {
+        background-image: url("/estate.webp");
+      }
+      .estate_three {
+        background-image: url("/field.webp");
       }
     }
   }

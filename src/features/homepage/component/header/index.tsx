@@ -1,5 +1,9 @@
 import React from "react";
 import styles from "./styles.module.scss";
+// import { ArrowIcon } from "@/component/icons/icons";
+
+import BcaiButton from "../button";
+import { FaArrowRight } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -21,7 +25,16 @@ const Header = () => {
                       Stylish, move-in-ready homes, fully finished for modern
                       living.
                     </p>
-                    <button className={styles.btn}>Explore</button>
+                    <BcaiButton
+                      color="#90BDFF"
+                      backgroundColor=" rgba(255, 255, 255, 0)"
+                      hoverColor=""
+                      hoverBackgroundColor=""
+                      border="1px solid #90BDFF"
+                      rightIcon={<FaArrowRight />}
+                    >
+                      Explore
+                    </BcaiButton>
                   </div>
                 </div>
               </div>
@@ -36,7 +49,16 @@ const Header = () => {
                       Take a look at our estate’s latest developments currently
                       under construction.
                     </p>
-                    <button className={styles.btn}>Explore</button>
+                    <BcaiButton
+                      color="#90BDFF"
+                      backgroundColor=" rgba(255, 255, 255, 0)"
+                      hoverColor=""
+                      hoverBackgroundColor=""
+                      border="1px solid #90BDFF"
+                      rightIcon={<FaArrowRight />}
+                    >
+                      Explore
+                    </BcaiButton>
                   </div>
                 </div>
               </div>
@@ -51,7 +73,16 @@ const Header = () => {
                       Secure a prime plot and enjoy the opportunity to build
                       your dream home in a thriving community.
                     </p>
-                    <button className={styles.btn}>Explore</button>
+                    <BcaiButton
+                      color="#90BDFF"
+                      backgroundColor="rgba(255, 255, 255, 0)"
+                      hoverColor=""
+                      hoverBackgroundColor=""
+                      border="1px solid #90BDFF"
+                      rightIcon={<FaArrowRight />}
+                    >
+                      Explore
+                    </BcaiButton>
                   </div>
                 </div>
               </div>

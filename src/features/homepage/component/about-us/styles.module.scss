@@ -17,6 +17,10 @@
       flex-direction: column;
       gap: 24px;
     }
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      gap: 24px;
+    }
     .brokenImages {
       object-fit: cover;
       height: 587px;
@@ -69,27 +73,10 @@
           font-variant: small-caps;
           color: #8c8c8d;
           @media (max-width: 768px) {
-            font-size: 12px;
+            font-size: 14px;
           }
-        }
-        .btn {
-          padding: 0.5em 1em;
-          border: 1px solid #41b1ef;
-          border-radius: 10px;
-          width: 138px;
-          height: 44px;
-          font-family: Inter;
-          font-weight: 400;
-          font-style: Regular;
-          font-size: 16px;
-          line-height: 28px;
-          letter-spacing: 0%;
-          color: #41b1ef;
-          @media (max-width: 768px) {
+          @media (max-width: 468px) {
             font-size: 12px;
-            width: 100%;
-            // width: 120px;
-            // height: 25px;
           }
         }
       }

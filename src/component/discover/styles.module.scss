@@ -8,12 +8,21 @@
     padding: 1.5rem;
     width: 100%;
   }
+  @media (max-width: 1200px) {
+    padding: 1.5rem;
+    width: 100%;
+  }
 
   .flex_image {
     display: flex;
     position: relative;
     width: 100%;
     @media (max-width: 768px) {
+      flex-direction: column;
+      position: static;
+      gap: 24px;
+    }
+    @media (max-width: 1200px) {
       flex-direction: column;
       position: static;
       gap: 24px;
@@ -31,6 +40,12 @@
         width: 100%;
         height: 400px;
       }
+
+      @media (max-width: 1200px) {
+        position: static;
+        width: 100%;
+        height: 400px;
+      }
     }
     .discover_flourish_estate {
       background-image: url("/body-background.png");
@@ -44,6 +59,11 @@
       border-radius: 10px;
       z-index: 1;
       @media (max-width: 768px) {
+        right: 0px;
+        width: 100%;
+        height: 500px;
+      }
+      @media (max-width: 1200px) {
         right: 0px;
         width: 100%;
         height: 500px;
@@ -73,6 +93,14 @@
             justify-content: center;
             padding: 0.5em;
           }
+          @media (max-width: 1200px) {
+            top: 50px;
+            left: 0;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5em;
+          }
           .txt_head {
             font-family: Cormorant Garamond;
             font-weight: 600;
@@ -94,6 +122,11 @@
             letter-spacing: 0%;
             color: #8c8c8d;
             @media (max-width: 768px) {
+              height: 100%;
+              font-size: 12.5px;
+              //   width: 100%;
+            }
+            @media (max-width: 1200px) {
               height: 100%;
               font-size: 12.5px;
               //   width: 100%;

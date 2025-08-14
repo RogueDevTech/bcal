@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./styles.module.scss";
 import broken from "@/component/images/broken-frame.webp";
 import Image from "next/image";
+import BcaiButton from "../button";
+import { FaArrowRight } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -27,7 +29,18 @@ const AboutUs = () => {
                 detail, and a vision to shape better places to live, work, and
                 grow.
               </p>
-              <button className={styles.btn}>Read More</button>
+
+              <BcaiButton
+                color="#90BDFF"
+                backgroundColor="rgba(255, 255, 255, 0)"
+                hoverColor=""
+                hoverBackgroundColor=""
+                border="1px solid #90BDFF"
+                width="134px"
+                rightIcon={<FaArrowRight />}
+              >
+                Explore
+              </BcaiButton>
             </div>
           </div>
         </div>
