@@ -1,13 +1,18 @@
 .wrapper {
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 
   .top_footer {
     background-color: #0d1522;
-    padding: 3rem 2rem;
+    padding: 3rem 79px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     gap: 3rem;
+    @media (max-width: 768px) {
+      padding: 3rem 1.5rem;
+      height: auto;
+    }
 
     .center_txt {
       display: flex;
@@ -19,7 +24,8 @@
       h3 {
         font-family: Cormorant Garamond;
         font-weight: 400;
-        font-size: 2rem;
+        font-style: Regular;
+        font-size: 40px;
         line-height: 100%;
         letter-spacing: -1%;
         text-align: center;
@@ -30,12 +36,13 @@
       p {
         font-family: Inter;
         font-weight: 400;
-        font-size: 1rem;
+        font-style: Regular;
+        font-size: 18px;
         line-height: 160%;
+        letter-spacing: 0%;
         text-align: center;
         color: #a8a6a6;
-        width: 100%;
-        max-width: 615px;
+        max-width: 650px;
       }
     }
 
@@ -43,23 +50,94 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      @media (max-width: 768px) {
+      }
 
       .list {
-        display: grid;
-        grid-template-rows: auto auto;
-        gap: 1.5rem;
-
-        .icon {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        @media (max-width: 768px) {
+          flex-direction: column;
+          gap: 2.5rem;
+        }
+        .list_one {
           display: flex;
-          align-items: flex-start;
-          gap: 0.5rem;
+          flex-direction: column;
+          gap: 1.5em;
+          @media (max-width: 768px) {
+            gap: 1em;
+          }
+          @media (max-width: 468px) {
+          }
+          .icon {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            @media (max-width: 768px) {
+              gap: 1rem;
+            }
+            @media (max-width: 468px) {
+            }
+            .Icon {
+              @media (max-width: 768px) {
+                width: 30px;
+              }
+            }
 
-          span {
-            font-family: Inter;
-            font-weight: 400;
-            font-size: 1rem;
-            line-height: 140%;
-            color: #fff;
+            span {
+              font-family: Inter;
+              font-weight: 400;
+              font-style: Regular;
+              font-size: 22px;
+              line-height: 130%;
+              letter-spacing: 0%;
+              color: #fff;
+              @media (max-width: 768px) {
+                font-size: 12px;
+              }
+              @media (max-width: 468px) {
+              }
+            }
+          }
+        }
+        .list_two {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5em;
+          @media (max-width: 768px) {
+            gap: 1em;
+          }
+          @media (max-width: 468px) {
+          }
+          .icon {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            @media (max-width: 768px) {
+              gap: 1rem;
+            }
+            @media (max-width: 468px) {
+            }
+            .Icon {
+              @media (max-width: 768px) {
+                width: 30px;
+              }
+            }
+            span {
+              font-family: Inter;
+              font-weight: 400;
+              font-style: Regular;
+              font-size: 22px;
+              line-height: 130%;
+              letter-spacing: 0%;
+              color: #fff;
+              @media (max-width: 768px) {
+                font-size: 12px;
+              }
+              @media (max-width: 468px) {
+              }
+            }
           }
         }
       }
@@ -69,6 +147,8 @@
   .lower_footer {
     padding: 2rem 1.5rem;
     background-color: #040e19;
+    @media (max-width: 768px) {
+    }
 
     .detail {
       display: flex;
@@ -76,106 +156,61 @@
       gap: 1.5rem;
       align-items: center;
       justify-content: center;
+      @media (max-width: 768px) {
+        gap: 1rem;
+      }
 
       .footer_center_txt {
         display: flex;
-        flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
-        text-align: center;
+        gap: 40px;
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
 
         h3 {
           font-family: Fraunces;
           font-weight: 400;
-          font-size: 1.125rem;
+          font-style: Regular;
+          font-size: 18px;
           line-height: 100%;
           letter-spacing: 2%;
+          text-align: center;
           color: #fff;
         }
 
         ul {
           display: flex;
-          flex-direction: column;
-          gap: 0.75rem;
+          gap: 16px;
 
           li {
             font-family: Inter;
             font-weight: 400;
             font-size: 0.875rem;
             line-height: 130%;
-            color: #fff;
+            color: #fff !important;
+            a {
+              color: inherit;
+              text-decoration: none;
+            }
           }
         }
 
         .social_media_icon {
           display: flex;
-          gap: 0.75rem;
+          gap: 12px;
         }
       }
 
-      p {
+      .email {
         font-family: Inter;
         font-weight: 400;
-        font-size: 0.875rem;
+        font-style: Regular;
+        font-size: 14px;
         line-height: 130%;
+        letter-spacing: 0%;
         color: #f4f4f4;
-        text-align: center;
       }
-    }
-  }
-  @media (min-width: 768px) {
-    .top_footer {
-      padding: 3rem 4rem;
-      height: auto;
-
-      .footer_description {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-      }
-    }
-
-    .lower_footer {
-      padding: 2rem 4rem;
-
-      .detail {
-        .footer_center_txt {
-          flex-direction: row;
-          align-items: center;
-          gap: 1.8rem;
-
-          ul {
-            flex-direction: row;
-            gap: 1rem;
-          }
-        }
-      }
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .top_footer {
-      padding: 3rem 8rem;
-
-      .center_txt {
-        p {
-          font-size: 1.125rem;
-        }
-      }
-
-      .footer_description {
-        .list {
-          .icon {
-            span {
-              font-size: 1.375rem;
-            }
-          }
-        }
-      }
-    }
-
-    .lower_footer {
-      padding: 2rem 5.5rem;
     }
   }
 }

@@ -26,6 +26,7 @@ const Header = () => {
                       living.
                     </p>
                     <BcaiButton
+                      link="https://www.bcalproperties.com.ng/search/label/COMPLETED%20HOMES "
                       color="#90BDFF"
                       backgroundColor=" rgba(255, 255, 255, 0)"
                       hoverColor=""
@@ -50,6 +51,7 @@ const Header = () => {
                       under construction.
                     </p>
                     <BcaiButton
+                      link="https://www.bcalproperties.com.ng/search/label/ONGOING%20PROJECTS "
                       color="#90BDFF"
                       backgroundColor=" rgba(255, 255, 255, 0)"
                       hoverColor=""
@@ -74,6 +76,7 @@ const Header = () => {
                       your dream home in a thriving community.
                     </p>
                     <BcaiButton
+                      link="https://www.bcalproperties.com.ng/search/label/LANDS%20FOR%20SALES"
                       color="#90BDFF"
                       backgroundColor="rgba(255, 255, 255, 0)"
                       hoverColor=""

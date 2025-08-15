@@ -32,7 +32,7 @@
       position: relative;
       top: 55px;
       object-fit: cover;
-      left: 3em;
+      left: 79px;
       z-index: 3;
 
       @media (max-width: 768px) {
@@ -54,7 +54,7 @@
       background-repeat: no-repeat;
       position: relative;
       height: 680px;
-      right: 3em;
+      right: 79px;
       width: 851px;
       border-radius: 10px;
       z-index: 1;
@@ -80,7 +80,7 @@
         .txt_box {
           position: absolute;
           top: 174px;
-          left: 150px;
+          left: 175px;
           width: 549px;
           display: flex;
           flex-direction: column;

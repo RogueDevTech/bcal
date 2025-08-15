@@ -25,26 +25,28 @@ const Footer = () => {
           </div>
           <div className={styles.footer_description}>
             <div className={styles.list}>
-              <div className={styles.icon}>
-                <LocationIcon />
-                <span>
-                  Bcal Jat Petrol Station plaza, KM 6,Akure-Ado Road, Jegele
-                  Akure.
-                </span>
+              <div className={styles.list_one}>
+                <div className={styles.icon}>
+                  <LocationIcon className={styles.Icon} />
+                  <span>
+                    Bcal Jat Petrol Station plaza, KM 6,Akure-Ado Road, Jegele
+                    Akure.
+                  </span>
+                </div>
+                <div className={styles.icon}>
+                  <WhatsappIcon className={styles.Icon} />
+                  <span>07034344050 , 07011111653</span>
+                </div>
               </div>
-              <div className={styles.icon}>
-                <WhatsappIcon />
-                <span>07034344050 , 07011111653</span>
-              </div>
-            </div>
-            <div className={styles.list}>
-              <div className={styles.icon}>
-                <EmailIcon />
-                <span>bcalprop@gmail.com</span>
-              </div>
-              <div className={styles.icon}>
-                <PhoneIcon />
-                <span>07011111653 , 0703434050</span>
+              <div className={styles.list_two}>
+                <div className={styles.icon}>
+                  <EmailIcon className={styles.Icon} />
+                  <span>bcalprop@gmail.com</span>
+                </div>
+                <div className={styles.icon}>
+                  <PhoneIcon className={styles.Icon} />
+                  <span>07011111653 , 0703434050</span>
+                </div>
               </div>
             </div>
           </div>
@@ -55,13 +57,13 @@ const Footer = () => {
               <h3>B C A L</h3>
               <ul>
                 <li>
-                  <Link href={"/about-us"}>About us</Link>
+                  <Link href={"#about-us"}>About us</Link>
                 </li>
                 <li>
-                  <Link href={"/contact-us"}>Contact us</Link>
+                  <Link href={"#contact-us"}>Contact us</Link>
                 </li>
                 <li>
-                  <Link href={"/privacy-policy"}>Privacy Policy</Link>
+                  <Link href={"#privacy-policy"}>Privacy Policy</Link>
                 </li>
               </ul>
               <div className={styles.social_media_icon}>
@@ -69,7 +71,7 @@ const Footer = () => {
                 <InstagramIcon />
               </div>
             </div>
-            <p>© 2025 Bcal properties</p>
+            <p className={styles.email}>© 2025 Bcal properties</p>
           </div>
         </div>
       </section>
