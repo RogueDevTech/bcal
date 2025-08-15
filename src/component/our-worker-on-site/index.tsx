@@ -12,9 +12,15 @@ const WorkerOnSite = () => {
             <p>Real-time footage from our project site.</p>
           </div>
           <div className={styles.worker_on_site_image}>
-            <div className={styles.click}>
-              <FaPlay className={styles.video_icon} />
-            </div>
+            <a
+              href="https://www.youtube.com/playlist?list=PLMA5GuQljW6L4oQvRcFhNGxsZS-cyl6TZ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={styles.click}>
+                <FaPlay className={styles.video_icon} />
+              </div>
+            </a>
           </div>
         </div>
       </section>

@@ -31,6 +31,7 @@ const AboutUs = () => {
               </p>
 
               <BcaiButton
+                link="https://www.bcalproperties.com.ng/"
                 color="#90BDFF"
                 backgroundColor="rgba(255, 255, 255, 0)"
                 hoverColor=""
