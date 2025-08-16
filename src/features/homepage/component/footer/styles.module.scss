@@ -1,14 +1,15 @@
 .wrapper {
   width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-
+  // max-width: 1400px;
+  // margin: 0 auto;
   .top_footer {
     background-color: #0d1522;
     padding: 3rem 79px;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    align-items: center;
+    justify-content: center;
     @media (max-width: 768px) {
       padding: 3rem 1.5rem;
       height: auto;
