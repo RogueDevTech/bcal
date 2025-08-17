@@ -1,3 +1,5 @@
+
+
 .wrapper {
   max-width: 1400px;
   width: 100%;
@@ -7,20 +9,19 @@
   @media (max-width: 768px) {
     padding: 1.5rem;
   }
+
   .worker_on_site_info {
     display: flex;
     flex-direction: column;
     gap: 2.25em;
-    @media (max-width: 768px) {
-    }
+
     .txt_header {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
       gap: 0.8em;
-      @media (max-width: 768px) {
-      }
+
       h3 {
         font-family: Cormorant Garamond;
         font-weight: 600;
@@ -35,6 +36,7 @@
           font-size: 24px;
         }
       }
+
       p {
         font-family: Inter;
         font-weight: 400;
@@ -46,6 +48,7 @@
         color: #8c8c8d;
       }
     }
+
     .worker_on_site_image {
       background-image: url("/worker-working.webp");
       background-position: center;
@@ -54,26 +57,58 @@
       height: 503px;
       width: 100%;
       position: relative;
+      transition: all 0.3s ease;
       @media (max-width: 768px) {
         height: 400px;
       }
 
-      a {
-        text-decoration: none;
-        color: inherit;
-        .click {
-          background-color: #fff;
-          position: absolute;
-          top: 240px;
-          width: 38px;
-          height: 38px;
-          left: 48%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          @media (max-width: 768px) {
-          }
+      .click {
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translate(-50%, -50%) scale(1.1);
         }
+
+        @media (max-width: 768px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+
+      .youtubeEmbed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+    }
+
+    .worker_on_site_image.videoLoaded {
+      background-image: none;
+
+      .click {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      .youtubeEmbed {
+        opacity: 1;
       }
     }
   }
