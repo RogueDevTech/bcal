@@ -14,14 +14,17 @@
     color: #000000;
     backdrop-filter: blur(2px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
     .logo {
-      color: #000 !important;
+      color: #000000e3 !important;
       font: 24px;
+      font-weight: 700;
     }
 
     .navLink li,
     .navLink li a {
-      color: #000 !important;
+      color: #000000d6 !important;
+      font-weight: 700;
     }
   }
 
@@ -48,12 +51,14 @@
       box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
       .logo {
         color: #fff !important;
-        font: 24px;
+        font-size: 24px;
+        font-weight: 700;
       }
 
       .navLink li,
       .navLink li a {
         color: #fff !important;
+        font-weight: 700;
       }
     }
   }
@@ -73,6 +78,9 @@
       background: rgba(13, 21, 34, 0.98);
       box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
     }
+  }
+  @media (max-width: 468px) {
+    width: 100%;
   }
 
   .navbar_nav {
@@ -101,6 +109,15 @@
       color: #000;
       z-index: 1002;
       display: none;
+      @media (max-width: 768px) {
+        color: #fff;
+      }
+      @media (max-width: 468px) {
+        color: #fff;
+      }
+      @media (max-width: 1024px) {
+        color: #fff;
+      }
     }
 
     .route {
@@ -172,9 +189,14 @@
   }
 
   @media (max-width: 1024px) {
-    left: 20px;
-    width: calc(100% - 40px);
-    top: 20px;
+    // left: 20px;
+    // width: calc(100% - 40px);
+    // top: 20px;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 0;
 
     .navbar_nav {
       .hamburger {
@@ -248,6 +270,14 @@
   }
 
   @media (max-width: 480px) {
+    // left: 10px;
+    // width: calc(100% - 20px);
+    // top: 15px;
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 0;
     .navbar_nav {
       .route {
         width: 90%;

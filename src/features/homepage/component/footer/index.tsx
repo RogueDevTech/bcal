@@ -28,24 +28,27 @@ const Footer = () => {
               <div className={styles.list_one}>
                 <div className={styles.icon}>
                   <LocationIcon className={styles.Icon} />
-                  <span>
+                  <p>
                     Bcal Jat Petrol Station plaza, KM 6,Akure-Ado Road, Jegele
                     Akure.
-                  </span>
+                  </p>
                 </div>
                 <div className={styles.icon}>
                   <WhatsappIcon className={styles.Icon} />
-                  <span>07034344050 , 07011111653</span>
+                  {/* <span>07034344050 ,07011111653</span> */}
+                  <p>07034344050,</p>
+                  <p>07011111653</p>
                 </div>
               </div>
               <div className={styles.list_two}>
                 <div className={styles.icon}>
                   <EmailIcon className={styles.Icon} />
-                  <span>bcalprop@gmail.com</span>
+                  <p>bcalprop@gmail.com</p>
                 </div>
                 <div className={styles.icon}>
                   <PhoneIcon className={styles.Icon} />
-                  <span>07011111653 , 0703434050</span>
+                  <p>07011111653,</p>
+                  <p>0703434050</p>
                 </div>
               </div>
             </div>
@@ -54,7 +57,10 @@ const Footer = () => {
         <div className={styles.lower_footer}>
           <div className={styles.detail}>
             <div className={styles.footer_center_txt}>
-              <h3>B C A L</h3>
+              <Link href={"/"}>
+                <h3>B C A L PROPERTIES</h3>
+              </Link>
+
               <ul>
                 <li>
                   <Link href={"#about-us"}>About us</Link>
@@ -67,8 +73,24 @@ const Footer = () => {
                 </li>
               </ul>
               <div className={styles.social_media_icon}>
-                <FacebookIcon />
-                <InstagramIcon />
+                <div className={styles.link_icon}>
+                  <a
+                    href="https://web.facebook.com/Bcalpropertiesnigltd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FacebookIcon />
+                  </a>
+                </div>
+                <div className={styles.link_icon}>
+                  <a
+                    href="https://www.instagram.com/bcalpropertiesnigltd/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <InstagramIcon />
+                  </a>
+                </div>
               </div>
             </div>
             <p className={styles.email}>© 2025 Bcal properties</p>

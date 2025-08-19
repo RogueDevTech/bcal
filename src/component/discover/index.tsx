@@ -14,8 +14,14 @@ const Discover = () => {
             width={586}
             height={569}
             className={styles.property_image}
+            data-aos="fade-right"
+            data-aos-delay="100"
           />
-          <div className={styles.discover_flourish_estate}>
+          <div
+            className={styles.discover_flourish_estate}
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
             <div className={styles.overlay}>
               <div className={styles.txt_box}>
                 <h3 className={styles.txt_head}>Discover Flourish Estate</h3>

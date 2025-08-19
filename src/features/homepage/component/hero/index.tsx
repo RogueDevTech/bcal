@@ -4,7 +4,11 @@ import styles from "./styles.module.scss";
 const Hero = () => {
   return (
     <>
-      <section className={styles.HeroBackground}>
+      <section
+        className={styles.HeroBackground}
+        data-aos="fade-right"
+        data-aos-delay="100"
+      >
         <div className={styles.overlay}>
           <div className={styles.displacement}>
             <h4 className={styles.header}>BCAL PROPERTIES</h4>
