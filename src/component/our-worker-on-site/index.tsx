@@ -63,7 +63,12 @@ const WorkerOnSite = () => {
             <h3>OUR WORKERS ON SITE</h3>
             <p>Real-time footage from our project site.</p>
           </div>
-          <div ref={videoContainerRef} className={styles.worker_on_site_image}>
+          <div
+            ref={videoContainerRef}
+            className={styles.worker_on_site_image}
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <div className={styles.click}>
               <FaPlay className={styles.video_icon} />
             </div>

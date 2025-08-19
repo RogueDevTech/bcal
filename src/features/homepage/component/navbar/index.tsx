@@ -1,5 +1,3 @@
-
-
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
@@ -58,7 +56,10 @@ const Navbar = () => {
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.navbar_nav}>
-        <h3 className={styles.logo}>BCAL</h3>
+        <Link href={"/"}>
+          <h3 className={styles.logo}>BCAL</h3>
+        </Link>
+
         {!menuOpen && (
           <button
             className={styles.hamburger}
